@@ -55,7 +55,7 @@ let team7 = {
   worldwide_fans: 400,
 };
 
-// db.collection('teams').add(team1)
+// db.collection("teams").add(team1);
 // db.collection('teams').add(team2)
 // db.collection('teams').add(team3)
 // db.collection('teams').add(team4)
@@ -170,7 +170,7 @@ let team7 = {
 //   });
 
 // Part 3 Question 1 Part 1
-// db.collection("teams").doc("26f2TNnSBBunWn0KjXYR").update({
+// db.collection("teams").doc("PNh1tla4YCMSlEVcpGum").update({
 //   worldwide_fans: 811,
 //   team_name: "Real Madrid FC",
 // });
@@ -183,13 +183,13 @@ let team7 = {
 
 // Part 3 Question 2 Part 1
 // db.collection("teams")
-//   .doc("26f2TNnSBBunWn0KjXYR")
+//   .doc("PNh1tla4YCMSlEVcpGum")
 //   .update({
 //     top_scorers: firebase.firestore.FieldValue.arrayRemove("Hazard"),
 //   });
 
 // db.collection("teams")
-//   .doc("26f2TNnSBBunWn0KjXYR")
+//   .doc("PNh1tla4YCMSlEVcpGum")
 //   .update({
 //     top_scorers: firebase.firestore.FieldValue.arrayUnion("Crispo"),
 //   });
@@ -206,3 +206,35 @@ let team7 = {
 //   .update({
 //     top_scorers: firebase.firestore.FieldValue.arrayUnion("Deco"),
 //   });
+
+// Part 3b. Add color object
+// let barca_jersey = {
+//   color: {
+//     home: "Red",
+//     away: "Gold",
+//   },
+// };
+
+// let madrid_jersey = {
+//   color: {
+//     home: "White",
+//     away: "Black",
+//   },
+// };
+
+// db.collection("teams").doc("eyTRcDZfSZJuxmxsoQWF").update(barca_jersey);
+// db.collection("teams").doc("PNh1tla4YCMSlEVcpGum").update(madrid_jersey);
+
+// Part 3c and 3d Updating Jersey Colors
+
+// Barca Jersey Update
+
+// db.collection("teams").doc("eyTRcDZfSZJuxmxsoQWF").update({
+//   "color.away": "Pink",
+// });
+
+// Real Madrid Jersey
+
+// db.collection("teams").doc("PNh1tla4YCMSlEVcpGum").update({
+//   "color.away": "Purple",
+// });
