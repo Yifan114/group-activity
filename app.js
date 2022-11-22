@@ -168,3 +168,41 @@ let team7 = {
 //       console.log(doc.data());
 //     });
 //   });
+
+// Part 3 Question 1 Part 1
+// db.collection("teams").doc("26f2TNnSBBunWn0KjXYR").update({
+//   worldwide_fans: 811,
+//   team_name: "Real Madrid FC",
+// });
+
+// // Part 3 Question 1 Part 2
+// db.collection("teams").doc("eyTRcDZfSZJuxmxsoQWF").update({
+//   worldwide_fans: 747,
+//   team_name: "FC Barcelona",
+// });
+
+// Part 3 Question 2 Part 1
+// db.collection("teams")
+//   .doc("26f2TNnSBBunWn0KjXYR")
+//   .update({
+//     top_scorers: firebase.firestore.FieldValue.arrayRemove("Hazard"),
+//   });
+
+// db.collection("teams")
+//   .doc("26f2TNnSBBunWn0KjXYR")
+//   .update({
+//     top_scorers: firebase.firestore.FieldValue.arrayUnion("Crispo"),
+//   });
+
+// // Part 3 Question 2 Part 2
+// db.collection("teams")
+//   .doc("eyTRcDZfSZJuxmxsoQWF")
+//   .update({
+//     top_scorers: firebase.firestore.FieldValue.arrayRemove("Puyol"),
+//   });
+
+// db.collection("teams")
+//   .doc("eyTRcDZfSZJuxmxsoQWF")
+//   .update({
+//     top_scorers: firebase.firestore.FieldValue.arrayUnion("Deco"),
+//   });
