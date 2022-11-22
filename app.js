@@ -87,16 +87,15 @@ let team7 = {
 //   });
 
 //Question 3
-//don't know !!!!!
-db.collection("teams")
-  .where("team_name", "in", ["Brazil National Team", "Argentina national team"])
-  .get()
-  .then((data) => {
-    let docs = data.docs;
-    docs.forEach((doc) => {
-      console.log(doc.data());
-    });
-  });
+// db.collection("teams")
+//   .where("team_name", "in", ["Brazil National Team", "Argentina national team"])
+//   .get()
+//   .then((data) => {
+//     let docs = data.docs;
+//     docs.forEach((doc) => {
+//       console.log(doc.data());
+//     });
+//   });
 
 //Question 4
 // db.collection("teams")
